@@ -416,6 +416,9 @@
 		1CF7AB9A1EDD0FDE0089EF0C /* ForumPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF7AB991EDD0FDE0089EF0C /* ForumPersistence.swift */; };
 		1CFC996A1BD3F402001180A7 /* PostsPageRefreshArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFC99691BD3F402001180A7 /* PostsPageRefreshArrowView.swift */; };
 		2A28EF11810F46A1AA802F96 /* Pods_SmilieExtractor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC774157D76C0C0F13DABE2 /* Pods_SmilieExtractor.framework */; };
+		664C08252103B7C600E4AFDF /* SmilieWebArchive.m in Resources */ = {isa = PBXBuildFile; fileRef = 1C3A146C19DFCD9A0022C44C /* SmilieWebArchive.m */; };
+		66B049A22103B9A200F52167 /* twitterwidget.js in Resources */ = {isa = PBXBuildFile; fileRef = 66B049A02103B84000F52167 /* twitterwidget.js */; };
+		66B049A42103BEBC00F52167 /* jsonp.js in Resources */ = {isa = PBXBuildFile; fileRef = 66B049A32103BEBB00F52167 /* jsonp.js */; };
 		7B0EA0B81D96B17B008B0A90 /* SettingsSliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0EA0B71D96B17B008B0A90 /* SettingsSliderCell.swift */; };
 		7B0EA0BA1D96BF82008B0A90 /* SettingsSliderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B0EA0B91D96BF82008B0A90 /* SettingsSliderCell.xib */; };
 		7B1FF1291F76C3A3000B64DA /* AppIconPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1FF1271F76C3A3000B64DA /* AppIconPickerCell.swift */; };
@@ -505,7 +508,6 @@
 		8C483FC216852E5D00D02482 /* macinyos-loading@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C483FC116852E5D00D02482 /* macinyos-loading@2x.png */; };
 		8C4F06B51686C1CB003CE53C /* macinyos-heading-left.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C4F06B41686C1CB003CE53C /* macinyos-heading-left.png */; };
 		8C8813A218492AC80058009E /* mac-watch.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C8813A118492AC70058009E /* mac-watch.png */; };
-		8C89FAF41CAA0F4200640F3D /* widgets.js in Resources */ = {isa = PBXBuildFile; fileRef = 8C89FAF31CAA0F4200640F3D /* widgets.js */; };
 		8C8FA47E19AD7CA300B67AAA /* award.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C8FA47719AD7CA300B67AAA /* award.png */; };
 		8C8FA47F19AD7CA300B67AAA /* diamond-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C8FA47819AD7CA300B67AAA /* diamond-icon.png */; };
 		8C8FA48019AD7CA300B67AAA /* ik.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C8FA47919AD7CA300B67AAA /* ik.png */; };
@@ -1102,6 +1104,8 @@
 		3DEC84CD16F06A21949AA42D /* Pods-Awful.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Awful.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Awful/Pods-Awful.debug.xcconfig"; sourceTree = "<group>"; };
 		4EFE724A98A1BA6A9CA9F7CF /* Pods-SmiliesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmiliesTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-SmiliesTests/Pods-SmiliesTests.release.xcconfig"; sourceTree = "<group>"; };
 		582656AF1CF1426AB875D197 /* Pods-CoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-CoreTests/Pods-CoreTests.release.xcconfig"; sourceTree = "<group>"; };
+		66B049A02103B84000F52167 /* twitterwidget.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = twitterwidget.js; path = /Users/adam/projects/Awful/App/Posts/twitterwidget.js; sourceTree = "<absolute>"; };
+		66B049A32103BEBB00F52167 /* jsonp.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jsonp.js; sourceTree = "<group>"; };
 		68A40BB24850D9A942D1E270 /* Pods_Awful.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Awful.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7846FF6DDA37B81D34DE2AE5 /* Pods-Core.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Core.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Core/Pods-Core.release.xcconfig"; sourceTree = "<group>"; };
 		7B0EA0B71D96B17B008B0A90 /* SettingsSliderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsSliderCell.swift; sourceTree = "<group>"; };
@@ -1195,7 +1199,6 @@
 		8C483FC116852E5D00D02482 /* macinyos-loading@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "macinyos-loading@2x.png"; sourceTree = "<group>"; };
 		8C4F06B41686C1CB003CE53C /* macinyos-heading-left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "macinyos-heading-left.png"; sourceTree = "<group>"; };
 		8C8813A118492AC70058009E /* mac-watch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mac-watch.png"; sourceTree = "<group>"; };
-		8C89FAF31CAA0F4200640F3D /* widgets.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = widgets.js; sourceTree = "<group>"; };
 		8C8FA47719AD7CA300B67AAA /* award.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = award.png; sourceTree = "<group>"; };
 		8C8FA47819AD7CA300B67AAA /* diamond-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "diamond-icon.png"; sourceTree = "<group>"; };
 		8C8FA47919AD7CA300B67AAA /* ik.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ik.png; sourceTree = "<group>"; };
@@ -1327,7 +1330,7 @@
 		1190F76913BE4ECB00B9D271 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				8C89FAF31CAA0F4200640F3D /* widgets.js */,
+				66B049A02103B84000F52167 /* twitterwidget.js */,
 				1CA1F0461910AEBA00E85DB2 /* zepto.min.js */,
 			);
 			name = Vendor;
@@ -1903,6 +1906,7 @@
 				1C8F0DE3191CF89D00CE8DEE /* AwfulJavaScript.h */,
 				1C8F0DE4191CF89D00CE8DEE /* AwfulJavaScript.m */,
 				1C8E10491916F78B0010007B /* common.js */,
+				66B049A32103BEBB00F52167 /* jsonp.js */,
 				1C8F0DED191E311B00CE8DEE /* FontScale.mustache */,
 				1C48538D1F93BADF0042531A /* HTMLRenderingHelpers.swift */,
 				1C16FBF91CBDC7A700C88BD1 /* OldWebViewNetworkActivityIndicatorManager.swift */,
@@ -2778,6 +2782,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66B049A22103B9A200F52167 /* twitterwidget.js in Resources */,
+				664C08252103B7C600E4AFDF /* SmilieWebArchive.m in Resources */,
 				7BF0902C2022C7570060BDC8 /* AppIcon-v_dark-60x60.png in Resources */,
 				7BF090312022C7570060BDC8 /* AppIcon-v_dark-29x29@2x.png in Resources */,
 				1C502D371F817004001890AF /* AppIcon-getout-29x29@2x.png in Resources */,
@@ -2911,7 +2917,6 @@
 				1CC362BC204C527700274E82 /* AppIcon-doggo-1024x1024.png in Resources */,
 				1C502D2E1F816FFC001890AF /* AppIcon-five-60x60@3x.png in Resources */,
 				1CE2B76B19C2374C00FDC33E /* Login.storyboard in Resources */,
-				8C89FAF41CAA0F4200640F3D /* widgets.js in Resources */,
 				7BF3A6061F92FA86009F8603 /* AppIcon-ghost-29x29.png in Resources */,
 				1CC10E3B1DD9558B00E0FB63 /* PotentiallyObjectionableThreadTags.plist in Resources */,
 				8C483FC216852E5D00D02482 /* macinyos-loading@2x.png in Resources */,
@@ -2920,9 +2925,9 @@
 				1C502D121F816FF3001890AF /* AppIcon-Bars2-1024x1024.png in Resources */,
 				1C5B83541F74B1F200BE7517 /* AppIcon-v-60x60@2x.png in Resources */,
 				7BF090332022C7570060BDC8 /* AppIcon-v_dark-60x60@2x.png in Resources */,
+				7BF0902F2022C7570060BDC8 /* AppIcon-v_dark-40x40@3x.png in Resources */,
 				7B82D6681F7809E3002291C7 /* AppIconCell.xib in Resources */,
 				1C502D361F817004001890AF /* AppIcon-getout-29x29.png in Resources */,
-				7BF0902F2022C7570060BDC8 /* AppIcon-v_dark-40x40@3x.png in Resources */,
 				1C502D241F816FFC001890AF /* AppIcon-five-20x20@2x.png in Resources */,
 				1C5B834C1F74B1F200BE7517 /* AppIcon-v-20x20@3x.png in Resources */,
 				1C502D181F816FF3001890AF /* AppIcon-Bars2-29x29@3x.png in Resources */,
@@ -2930,6 +2935,7 @@
 				1C5B834E1F74B1F200BE7517 /* AppIcon-v-29x29@2x.png in Resources */,
 				1C502D171F816FF3001890AF /* AppIcon-Bars2-29x29@2x.png in Resources */,
 				1C502D1D1F816FF3001890AF /* AppIcon-Bars2-60x60@2x.png in Resources */,
+				66B049A42103BEBC00F52167 /* jsonp.js in Resources */,
 				1C502D3A1F817004001890AF /* AppIcon-getout-40x40@2x.png in Resources */,
 				8C4F06B51686C1CB003CE53C /* macinyos-heading-left.png in Resources */,
 				1CC362C3204C527700274E82 /* AppIcon-doggo-20x20.png in Resources */,

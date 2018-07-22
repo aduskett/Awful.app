@@ -156,8 +156,11 @@ function showLinkifiedImage(link) {
     link.replaceWith($('<img>', { border: 0, alt: '', src: link.text() }));
 }
 
+
+
+
 function parseTweetURL(link) {
-	return $(link).attr("href").match(/^(?:https|http):\/\/(?:mobile\.)?twitter.com\/[0-9a-zA-Z_]+\/(?:status|statuses)\/([0-9]+)/);
+	return link.href.match(RegExp('https?://(?:[\\w\\.]*\\.)?twitter.com/[\\w_]+/status(?:es)?/([\\d]+)'));
 }
 
 function embedTweet(link) {
@@ -168,29 +171,25 @@ function embedTweet(link) {
     var j = e[1];
     var h = link;
     
-    $.ajax({
-        url: "https://api.twitter.com/1/statuses/oembed.json?id=" + j,
-        dataType: "jsonp",
-        success: function(l) {
-            h = $(h).wrap("<div class='tweet'>").parent();
-            $(h).html(l.html);
-            var scr = $(h).find("script")[1];
-            var src = $(scr).attr("src");
-            var newSrc = "https:" + src;
-            $(scr).attr("src", newSrc);
-            didEmbedTweet(link);
-        }
-    });
+    JSONP.get('https://publish.twitter.com/oembed?omit_script=true&url=' + escape(link.href), {}, function getTworts(l) {
+          h = $(h).wrap("<div class='tweet'>").parent();
+          $(h).html(l.html);
+          var scr = $(h).find("script")[1];
+          var src = $(scr).attr("src");
+          var newSrc = "https:" + src;
+          $(scr).attr("src", newSrc);
+          didEmbedTweet(link, h);
+      });
 }
 
-function didEmbedTweet(link) {
+function didEmbedTweet(link, div) {
     var i = window.Awful.tweets.indexOf(link);
     if (i > -1) {
         window.Awful.tweets.splice(i, 1);
     }
     
     if (window.Awful.tweets.length == 0) {
-        window.twttr.widgets.load();
+        window.twttr.widgets.load(div);
     }
 }
 

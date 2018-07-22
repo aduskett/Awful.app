@@ -25,7 +25,7 @@ struct PrivateMessageViewModel: MustacheBoxable {
         }
         var javascript: String? {
             var error: NSError?
-            let script = LoadJavaScriptResources(["WebViewJavascriptBridge.js.txt", "zepto.min.js", "widgets.js", "common.js", "private-message.js"], &error)
+            let script = LoadJavaScriptResources(["WebViewJavascriptBridge.js.txt", "zepto.min.js", "twitterwidget.js", "common.js", "private-message.js"], &error)
             if script == nil {
                 Log.e("error loading JavaaScripts: \(error as Any)")
             }

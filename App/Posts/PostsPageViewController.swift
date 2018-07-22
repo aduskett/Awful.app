@@ -273,7 +273,7 @@ final class PostsPageViewController: ViewController {
         var context: [String: Any] = [:]
         
         var error: NSError? = nil
-        if let script = LoadJavaScriptResources(["WebViewJavascriptBridge.js.txt", "zepto.min.js", "widgets.js", "common.js", "posts-view.js"], &error) {
+        if let script = LoadJavaScriptResources(["WebViewJavascriptBridge.js.txt", "zepto.min.js", "twitterwidget.js", "jsonp.js", "common.js", "posts-view.js"], &error) {
             context["script"] = script as Any
         } else {
             Log.e("error loading JavaScripts: \(error!)")
